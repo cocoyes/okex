@@ -3,6 +3,7 @@ package ws
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/cocoyes/okex"
 	"strings"
 
 	"github.com/cocoyes/okex/events"

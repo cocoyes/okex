@@ -1,5 +1,7 @@
 package publicdata
 
+import "github.com/cocoyes/okex"
+
 type (
 	Instrument struct {
 		InstType     string               `json:"instType"`

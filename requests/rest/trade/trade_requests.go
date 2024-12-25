@@ -1,5 +1,7 @@
 package trade
 
+import "github.com/cocoyes/okex"
+
 type (
 	PlaceOrder struct {
 		ID              string            `json:"-"`

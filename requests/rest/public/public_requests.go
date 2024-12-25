@@ -1,5 +1,7 @@
 package public
 
+import "github.com/cocoyes/okex"
+
 type (
 	GetInstruments struct {
 		Uly      string              `json:"uly,omitempty"`

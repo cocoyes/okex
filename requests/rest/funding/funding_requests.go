@@ -1,5 +1,7 @@
 package funding
 
+import "github.com/cocoyes/okex"
+
 type (
 	GetCurrencies struct {
 		Ccy []string `json:"ccy,omitempty"`

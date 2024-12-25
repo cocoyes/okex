@@ -2,6 +2,7 @@ package rest
 
 import (
 	"encoding/json"
+	"github.com/cocoyes/okex"
 	"net/http"
 
 	requests "github.com/cocoyes/okex/requests/rest/market"

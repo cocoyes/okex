@@ -1,5 +1,7 @@
 package market
 
+import "github.com/cocoyes/okex"
+
 type (
 	GetTickers struct {
 		Uly      string              `json:"uly,omitempty"`

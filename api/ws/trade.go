@@ -1,6 +1,7 @@
 package ws
 
 import (
+	"github.com/cocoyes/okex"
 	requests "github.com/cocoyes/okex/requests/rest/trade"
 )
 

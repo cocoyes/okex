@@ -1,5 +1,7 @@
 package account
 
+import "github.com/cocoyes/okex"
+
 type (
 	GetBalance struct {
 		Ccy []string `json:"ccy,omitempty"`

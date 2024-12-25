@@ -1,5 +1,7 @@
 package public
 
+import "github.com/cocoyes/okex"
+
 type (
 	Instruments struct {
 		InstType okex.InstrumentType `json:"instType"`

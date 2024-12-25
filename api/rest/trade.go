@@ -44,7 +44,7 @@ func (c *Trade) PlaceOrder(req requests.PlaceOrder) (response responses.PlaceOrd
 //
 // https://www.okex.com/docs-v5/en/#rest-api-trade-place-multiple-orders
 func (c *Trade) PlaceMultipleOrders(req []requests.PlaceOrder) (response responses.PlaceOrder, err error) {
-	p := "/api/v5/trade/batch-order"
+	p := "/api/v5/trade/batch-orders"
 	var m interface{}
 	m = req
 	res, err := c.client.DoBatch(p, m)

@@ -67,7 +67,7 @@ func (c *Account) GetPositions(req requests.GetPositions) (response responses.Ge
 	return
 }
 
-func (c *Account) GetHistoryPositions(req requests.GetPositions) (response responses.GetPositions, err error) {
+func (c *Account) GetHistoryPositions(req requests.GetHistoryPositions) (response responses.GetPositions, err error) {
 	p := "/api/v5/account/positions-history"
 	m := okex.S2M(req)
 	res, err := c.client.Do(http.MethodGet, p, true, m)

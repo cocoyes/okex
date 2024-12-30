@@ -67,6 +67,20 @@ func (c *Account) GetPositions(req requests.GetPositions) (response responses.Ge
 	return
 }
 
+func (c *Account) GetHistoryPositions(req requests.GetPositions) (response responses.GetPositions, err error) {
+	p := "/api/v5/account/positions-history"
+	m := okex.S2M(req)
+	res, err := c.client.Do(http.MethodGet, p, true, m)
+	if err != nil {
+		return
+	}
+	defer res.Body.Close()
+	d := json.NewDecoder(res.Body)
+	err = d.Decode(&response)
+
+	return
+}
+
 // GetAccountAndPositionRisk
 // Get account and position risk
 //

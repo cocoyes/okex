@@ -88,6 +88,12 @@ type (
 		InstType    okex.InstrumentType `json:"instType"`
 		CTime       okex.JSONTime       `json:"cTime"`
 		UTime       okex.JSONTime       `json:"uTime"`
+		OpenAvgPx   string              `json:"openAvgPx"`
+		CloseAvgPx  string              `json:"closeAvgPx"`
+		RealizedPnl string              `json:"realizedPnl"`
+		Pnl         string              `json:"pnl"`
+		PnlRatio    string              `json:"pnlRatio"`
+		Direction   string              `json:"direction"`
 	}
 	BalanceAndPosition struct {
 		EventType okex.EventType    `json:"eventType"`

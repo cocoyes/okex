@@ -59,7 +59,7 @@ type (
 		InstID     string            `json:"instId"`
 		Amt        float64           `json:"amt,string"`
 		PosSide    okex.PositionSide `json:"posSide"`
-		ActionType okex.CountAction  `json:"actionType"`
+		ActionType okex.CountAction  `json:"type"`
 	}
 	GetLeverage struct {
 		InstID  []string        `json:"instId"`
